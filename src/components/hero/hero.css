@@ -4,6 +4,67 @@
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    height: 100vh;
+    height: 90vh;
     width: auto;
+}
+
+.hero-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 35rem;
+    gap: 10px;
+    top: 13rem; 
+}
+
+
+.hero-menu li{
+    list-style: none;
+    background-color: rgb(255, 187, 0);
+    width: 100%;
+    padding: 3px;
+    border-radius: 5px;
+}
+.hero-menu li:hover{
+    background: transparent;
+}
+
+
+@media screen and (max-width:1200px) {
+    .hero-menu{
+        position: relative;
+        left: -4rem;
+        top: 15rem;
+        overflow: hidden;
+    }
+    .hero-menu li{
+        font-size: 16px;
+        width: max-content;
+    }
+}
+@media screen and (max-width:1024px) {
+    .hero-menu{
+        overflow: hidden;
+        position: relative;
+        left: -3rem;
+        top: 15rem;
+    }
+    .hero-menu li{
+        font-size: 14px;
+        width: max-content;
+    }
+}
+@media screen and (max-width:600px) {
+    .hero-menu{
+        overflow: hidden;
+        position: relative;
+         left: -3rem;
+        top: 15rem;
+    }
+    .hero-menu li{
+        font-size: 12px;
+        width: max-content;
+    }
 }

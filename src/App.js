@@ -4,6 +4,7 @@ import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
 
 function App() {
+  const none = 'Home'
   return (
     <>
       <BrowserRouter>

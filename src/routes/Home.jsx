@@ -13,7 +13,7 @@ const Home = (props) => {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
     React.useEffect(() => {
-        // document.title = `${capitalizeFirstLetter(props.category)} - J.A-Foods`
+        document.title = `${capitalizeFirstLetter(props.category)} - J.A-Foods`
         fetch(`https://api.spoonacular.com/food/products/search?query=${props.category}&apiKey=4df32ad9a2c24ed8b72096710375c685`)
             .then(response => response.json())
             .then(data => {
