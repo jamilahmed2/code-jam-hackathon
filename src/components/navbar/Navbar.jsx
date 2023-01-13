@@ -6,7 +6,6 @@ const Navbar = () => {
     <>
       <div className="navbar">
         <a href="#">Home</a>
-        <a href="#">About</a>
         <div className="dropdown">
           <button className="dropbtn">Menu
             <i className="fa fa-caret-down"></i>
@@ -17,6 +16,7 @@ const Navbar = () => {
             <a href="#">Biriyani</a>
           </div>
         </div>
+        <a href="#">About</a>
       </div>
     </>
   );

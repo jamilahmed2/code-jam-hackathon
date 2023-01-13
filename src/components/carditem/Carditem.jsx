@@ -1,22 +1,23 @@
 import React from "react";
 import "./carditem.css";
-const Carditem = () => {
+const Carditem = (props) => {
+  let {title,image}=props
   return (
     <>
-    <div className="main">
+    {/* <div className="main"> */}
       <div className="cards">
         <div className="card">
-          <img src="" alt="" />
+          <img src={image} alt="" />
           <div className="content">
-            <h1>title</h1>
-            <p>
+            <h1>{title}</h1>
+            {/* <p>
              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, fugiat.
-            </p>
-            <a href="#" className="btn">Button</a>
+            </p> */}
+            <a href="#" className="btn">Add To Cart</a>
           </div>
         </div>
        </div>
-    </div>
+    {/* </div> */}
     </>
   );
 };

@@ -1,21 +1,33 @@
 import React, { useState } from 'react'
 import Carditem from '../components/carditem/Carditem'
-import Navbar from '../components/navbar/Navbar'
 
 
-const Home = () => {
 
+const Home = (props) => {
 
-  return (
-    <>
-    <Navbar/>
-    <div className="container">
-         <Carditem />
-    
+    // const [category,setCategory] = useState("Burger")
+    const category = 'burger'
+    const [data, setData] = useState([])
 
-    </div>
-    </>
-  )
+    React.useEffect(() => {
+        fetch(`https://api.spoonacular.com/food/products/search?query=${category}&apiKey=3afb518361e54e0b94c53614023a5a2a`)
+            .then(response => response.json())
+            .then(data => {
+                setData(data.products)
+                console.log(data)
+            }
+            );
+    }, [])
+
+    return (
+        <>
+            <div className="container">
+                    {data?.map((product, indx) => {
+                        return <Carditem title={product.title} id={product.id} image={product.image} />
+                    })}
+            </div>
+        </>
+    )
 }
 
 export default Home

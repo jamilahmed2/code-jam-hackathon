@@ -8,15 +8,15 @@
     --heading-color: #343a40;
     --btn-bg-color: hsl(195, 62%, 45%);
 }
-.main {
+/* .main {
 	font-family: 'Rubik', sans-serif;
 	background-color: var(--body-bg-color);
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-    /* margin-left: .5rem; */
-	/* min-height: 100vh; */
-}
+	min-height: max-content;
+	width: max-content;
+} */
 .card {
 	background-color: #fff;
 	width: 300px;
@@ -33,7 +33,7 @@
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 36px;
+	/* margin: 1rem auto ; */
 }
 
 .card img {
@@ -45,9 +45,10 @@
 .content {
 	padding: 24px;
 }
-.content h1 {
+ .cards .card .content h1 {
 	color: var(--heading-color);
 	margin-bottom: 10px;
+	font-size: 1rem;
 }
 .content p {
 	color: var(--text-color);
