@@ -1,10 +1,19 @@
-import React from 'react'
-import Carditem from '../components/Carditem'
+import React, { useState } from 'react'
+import Carditem from '../components/carditem/Carditem'
+import Navbar from '../components/navbar/Navbar'
+
 
 const Home = () => {
+
+
   return (
     <>
-        <Carditem/>
+    <Navbar/>
+    <div className="container">
+         <Carditem />
+    
+
+    </div>
     </>
   )
 }

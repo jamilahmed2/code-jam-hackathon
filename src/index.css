@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(224, 224, 224);
+}
+
+.container{
+    margin: 1rem 1rem;
+}
